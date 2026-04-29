@@ -37,7 +37,7 @@ pipeline{
                 }
             }
             steps {
-                sh 'npm run test:unit -- --coverage'
+                sh 'npm run test:unit'
             }
             post {
                 always {
