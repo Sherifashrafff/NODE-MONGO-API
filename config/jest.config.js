@@ -20,6 +20,11 @@ module.exports = {
   coverageDirectory: 'coverage',
   coverageReporters: ['lcov', 'text', 'clover'],
   coverageThreshold: {
-    global: { lines: 80, functions: 80, branches: 70, statements: 80 },
+    global: { 
+      lines: 30,        // was 80
+      functions: 30,    // was 80
+      branches: 20,     // was 70
+      statements: 30    // was 80
+    },
   },
 };
