@@ -3,8 +3,10 @@ pipeline{
     stages{
         stage('Install Deps'){
             agent{
+<<<<<<< HEAD
+                docker{
                 image 'node:18.0.0'
-                reuseNode true
+                reuseNode true}
             }
             steps{
                 sh '''
