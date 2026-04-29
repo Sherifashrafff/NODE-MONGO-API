@@ -1,17 +1,12 @@
 pipeline{
     agent any
     stages{
-        stage('Install Deps'){
+        stage('Install Depns'){
             agent{
-<<<<<<< HEAD
-<<<<<<< HEAD
                 docker{
-                image 'node:18.0.0'
-=======
-                docker
-                {image 'node:18.0.0'
->>>>>>> 1afbfaf (edit jenkinsfile)
-                reuseNode true}
+                    image 'node:18.0.0'
+                    reuseNode true
+                }
             }
             steps{
                 sh '''
